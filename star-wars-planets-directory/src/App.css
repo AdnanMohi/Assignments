@@ -1,0 +1,196 @@
+/* App.css */
+
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+.heading{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+
+}
+/* Container Styles */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  height: auto;
+}
+
+/* Card Styles */
+.cards {
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  max-height: 400px; /* Set a maximum height for the card */
+ overflow-y: auto;
+}
+
+.card-content {
+  padding: 20px;
+  height: 100%; /* Occupy full height of the card content */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; 
+padding-bottom: 10px;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+/* Loading Indicator Styles */
+.loading-indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(120, 93, 93, 0.8);
+  padding: 20px;
+  border-radius: 50%; /* Make it circular */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other content */
+  animation: rotate 1s linear infinite; /* Add rotation animation */
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg); /* Initial rotation */
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg); /* Final rotation */
+  }
+}
+
+
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Residents List Styles */
+.resident-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resident-list li {
+  margin-bottom: 5px;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  /* Mobile-specific styles */
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet-specific styles */
+  .container {
+    padding: 20px;
+  }
+
+  .card {
+    width: 45%;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .card:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Web Browser Styles */
+@media screen and (min-width: 1024px) {
+  /* Web-specific styles */
+  .container {
+    padding: 40px;
+  }
+
+  .card {
+    width: 30%;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .card:last-child {
+    margin-right: 0;
+  }
+}
