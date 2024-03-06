@@ -1,0 +1,237 @@
+.body{
+  
+    
+}
+
+.container{
+    width: ;
+}
+.bottom-navbar{
+    position:absolute ;
+    bottom: 0;
+
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height:10 px;
+  
+}
+.bottom-nav-item{
+    bottom: 1;
+    height: 0px;
+    padding: 0;
+        display: flex;
+    flex-direction: column;
+}
+
+/* Style for the "Create a Team" button */
+.add-team-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Style for the team member names */
+.team-member {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+.side-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Add Subfolder button */
+.add-subfolder-button {
+    background-color: #eff8f0;
+    color: rgb(19, 18, 18);
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto;
+}
+
+/* Finalize button */
+.finalize-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Toggle dropdown button */
+.toggle-dropdown-button {
+    display: inline-block;
+    background-color: #e6ebe6;
+    color: rgb(17, 10, 10);
+    border: none;
+    padding-left: px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Tick mark for folder */
+.tick-mark {
+    font-size: 16px;
+    color: #4CAF50;
+    margin-left: 5px;
+}
+/* Style for subfolder input fields */
+.subfolder-input {
+    display: block;
+    margin-bottom: 5px; /* Adjust spacing between subfolders */
+}
+
+
+.folder {
+    display: flex;
+    padding: 5px 10px;
+    background-color: #e9e9e9;
+    color: #333;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   
+    
+   
+}
+
+/* Style for the folder container */
+#folder-container {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+.folder-name-container {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Style for the folder header */
+.folder-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.folder-content {
+    position: relative;
+}
+
+/* Style for the folder name input field */
+#folderNameInput {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+/* Style for the "+" button */
+#addFolderButton, #finalizeFolderButton {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the "+" button on hover */
+#addFolderButton:hover, #finalizeFolderButton:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the tick sign button */
+#finalizeFolderButton {
+    display: none; /* Initially hidden */
+}
+
+/* Adjustments for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .folder-header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #folderNameInput {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #908585;
+    color: #fff;
+    
+
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    border:2px solid #1b1717;
+    height: 80vh;
+}
+
+.navbar{
+    margin: 2px;
+    display: flex;
+    border:2px solid #000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 2vh;
+}
+.container{
+    display: flex;
+    height: 90vh;
+    padding: 5px;
+}
+.side-box{
+    position: relative;
+    border: 2px solid #000;
+    height: auto;
+    width: 30%;
+    margin-right: 7px;
+}
+.main-box{
+    border: 2px solid #000;
+    height: 90vh;
+    width: 70%;
+}
